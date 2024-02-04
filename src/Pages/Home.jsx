@@ -10,11 +10,11 @@ function Home() {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center h-screen ">
+        <div className="flex flex-col justify-center items-center h-screen bg-[#65ccff]">
             <div className="flex flex-col justify-center items-center gap-5">
-                <h1 className="text-3xl font-semibold">What is your name?</h1>
+                <h1 className="text-3xl font-semibold text-zinc-50">What is your name?</h1>
                 <input
-                    className="p-2 border-slate-900 border-2 rounded-md"
+                    className="p-2 border-[#7dd4ff] border-2 rounded-md"
                     type="text"
                     name='name'
                     onChange={handleInputChange}
