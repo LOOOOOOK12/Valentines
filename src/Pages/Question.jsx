@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLocation,Link } from "react-router-dom";
+import cinnamon from '../assets/cinnamon.gif'
 
 function Question() {
 
@@ -10,6 +11,8 @@ function Question() {
         `I will be Sad :< ${location.state.name}`,
         `Sure talaga ${location.state.name}??`,
         `Hmmmhn~ :< ${location.state.name}`,
+        `Weeeeeehh~`,
+        `Pweaaaseee~ ${location.state.name}`
     ];
 
     const [labelText, setLabelText] = useState(phrases[0]);
@@ -20,15 +23,15 @@ function Question() {
     };
 
     return (
-        <div className="h-screen flex flex-col items-center justify-center">
-            <img src="" alt="" />
+        <div className="h-screen flex flex-col items-center justify-center bg-[#65ccff]">
+            <img src={cinnamon} className="h-[20rem] mb-6 rounded-lg"/>
             <div className="flex flex-col items-center justify-center gap-5">
-                <label>{labelText}</label>
+                <label className="text-4xl font-semibold text-zinc-50">{labelText}</label>
                 <div className="flex gap-5">
-                    <Link to='/Celebrate'><button className="px-5 py-3 rounded-md bg-green-600 text-slate-200">Yes</button></Link>
-                    <button className="px-5 py-3 rounded-md bg-red-600 text-slate-200" onClick={handleNoButtonClick}>No</button>
+                    <Link to='/Celebrate'><button className="px-5 py-3 rounded-md bg-green-600 text-zinc-50">Yes</button></Link>
+                    <button className="px-5 py-3 rounded-md bg-red-600 text-zinc-50" onClick={handleNoButtonClick}>No</button>
                 </div>
-                <Link to='/'><button className="px-5 py-3 rounded-md bg-blue-700 text-slate-200"> Back</button></Link>
+                <Link to='/'><button className="px-5 py-3 rounded-md bg-blue-700 text-zinc-50"> Back</button></Link>
             </div>
         </div>
     );
