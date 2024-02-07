@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import cina from "../assets/cina.gif"
 import { page1 } from "../Constants/page2";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
