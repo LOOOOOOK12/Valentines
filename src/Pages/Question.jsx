@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useLocation,Link } from "react-router-dom";
-import cinnamon from '../assets/cinnamon.gif'
 import { page1 } from "../Constants/page1";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
